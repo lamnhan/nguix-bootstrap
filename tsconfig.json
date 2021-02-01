@@ -20,9 +20,13 @@
       "dom"
     ],
     "paths": {
-      "bootstrap": [
+      "@lamnhan/nguix-bootstrap": [
         "dist/bootstrap/bootstrap",
         "dist/bootstrap"
+      ],
+      "@lamnhan/ngx-useful": [
+        "../ngx-useful/dist/useful/useful",
+        "../ngx-useful/dist/useful"
       ]
     }
   },

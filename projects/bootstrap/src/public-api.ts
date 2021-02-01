@@ -2,6 +2,9 @@
  * Public API Surface of bootstrap
  */
 
-export * from './lib/bootstrap.service';
-export * from './lib/bootstrap.component';
-export * from './lib/bootstrap.module';
+export {NguixBootstrapModule} from './lib/bootstrap.module';
+
+export * from './lib/components/header/header.component';
+export {HeaderComponentModule} from './lib/components/header/header.module';
+export * from './lib/components/footer/footer.component';
+export {FooterComponentModule} from './lib/components/footer/footer.module';

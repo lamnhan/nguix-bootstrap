@@ -1,11 +1,34 @@
 {
-  "name": "bootstrap",
+  "name": "@lamnhan/nguix-bootstrap",
   "version": "0.0.1",
+  "description": "An Angular UI kit based on Bootstrap.",
+  "author": "Lam Nhan",
+  "homepage": "https://lamnhan.com",
+  "license": "MIT",
+  "keywords": [
+    "lamnhan",
+    "angular",
+    "ui",
+    "component",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lamnhan/nguix-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lamnhan/nguix-bootstrap/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^11.0.9",
-    "@angular/core": "^11.0.9"
+    "@angular/core": "^11.0.9",
+    "@angular/router": "^11.0.9",
+    "@lamnhan/ngx-useful": "0.0.4",
+    "@lamnhan/schemata": "^1.0.3",
+    "bootstrap": "5.0.0-beta1"
   },
   "dependencies": {
+    "ngx-markdown": "^11.0.0",
     "tslib": "^2.0.0"
   }
 }

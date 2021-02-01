@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
-import { BootstrapComponent } from './bootstrap.component';
 
-
+import { HeaderComponentModule } from './components/header/header.module';
+import { FooterComponentModule } from './components/footer/footer.module';
 
 @NgModule({
-  declarations: [BootstrapComponent],
+  declarations: [],
   imports: [
+    HeaderComponentModule,
+    FooterComponentModule,
   ],
-  exports: [BootstrapComponent]
+  exports: [
+    HeaderComponentModule,
+    FooterComponentModule,
+  ]
 })
-export class BootstrapModule { }
+export class NguixBootstrapModule { }
