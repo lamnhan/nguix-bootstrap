@@ -125,7 +125,50 @@
           }
         }
       }
+    },
+    "bootstrap": {
+      "projectType": "library",
+      "root": "projects/bootstrap",
+      "sourceRoot": "projects/bootstrap/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/bootstrap/tsconfig.lib.json",
+            "project": "projects/bootstrap/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/bootstrap/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bootstrap/src/test.ts",
+            "tsConfig": "projects/bootstrap/tsconfig.spec.json",
+            "karmaConfig": "projects/bootstrap/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bootstrap/tsconfig.lib.json",
+              "projects/bootstrap/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "nguix-bootstrap"
+  "defaultProject": "nguix-bootstrap",
+  "cli": {
+    "analytics": "0dd54875-6afb-4ff7-8d9a-ae8c6e284c56"
+  }
 }
